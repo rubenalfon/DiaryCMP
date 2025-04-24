@@ -1,0 +1,194 @@
+<resources>
+    <string name="diary_cmp">DiarioCMP</string>
+    <string name="diary">Diario</string>
+
+    <string name="today">Hoy</string>
+    <string name="calendar">Calendario</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="settings">Ajustes</string>
+
+    <string name="okey">Okey</string>
+    <string name="accept">Aceptar</string>
+    <string name="next">Siguiente</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="return_">Volver</string>
+    <string name="cancel">Cancelar</string>
+    <string name="loading">Cargando...</string>
+    <string name="skip">Saltar</string>
+
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="change_password">Cambiar contraseña</string>
+
+    <string name="register_password_alert_title">¡No olvides tu contraseña!</string>
+    <string name="register_password_alert_body">Tu contraseña es la llave de tu diario, sin ella no podrás acceder a tus datos y el servicio tecnico no podrá recuperar tu cuenta porque tus datos están encriptados 😱.\n\nNosotros te recomendamos usar un gestor de contraseñas como Bitwarden o LastPass.</string>
+
+    <string name="old_password">Contraseña antigua</string>
+    <string name="new_password">Contraseña nueva</string>
+    <string name="confirm_new_password">Confirmar contraseña nueva</string>
+    <string name="error_old_password">La contraseña antigua no es correcta</string>
+    <string name="password_changed_title">Contraseña cambiada</string>
+    <string name="password_changed_body">La contraseña se ha cambiado con éxito, vuelve a iniciar sesión con la nueva contraseña.</string>
+    <string name="generic_error_change_password">La contraseña no se ha podido cambiar, a continuación se muestra el error completo:\n%1$s</string>
+
+    <string name="register_new_account">Crear una nueva cuenta</string>
+    <string name="log_in_to_existing_account">Iniciar sesión con una cuenta existente</string>
+
+    <string name="welcome_title">¡Bienvenido!</string>
+    <string name="welcome_description">¡Registra tu vida diaria con componentes personalizados! ¡Y echa un vistazo a las estadísticas de tu vida diaria!</string>
+    <string name="app_strengths_secure">Seguridad robusta con protección avanzada de la información.</string>
+    <string name="app_strengths_multiplatform">Compatibilidad fluida en múltiples plataformas y dispositivos.</string>
+    <string name="app_strengths_autosave">Guardado automático que asegura la preservación constante de los datos.</string>
+    <string name="write_name">¡Escribe tu nombre de usuario para empezar!</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="change_name">Cambiar nombre</string>
+    <string name="verify_your_email">Verifica tu correo electrónico</string>
+    <string name="verify_your_email_body">Hemos enviado un correo de verificación a tu dirección de correo electrónico. Por favor, verifica tu cuenta para continuar.</string>
+    <string name="resend_verification_email">Reenviar correo de verificación</string>
+
+    <string name="register_title_error">Error en el registro</string>
+    <string name="login_title_error">Error de inicio de sesión</string>
+
+    <string name="register_body_error_generic">Ocurrió un problema durante el registro. Por favor, revisa los datos ingresados e inténtalo nuevamente. Si el problema persiste, contacta al soporte técnico. Error completo:\n%1$s</string>
+    <string name="register_body_invalid_login_credentials">No se ha encontrado ninguna cuenta con ese correo electrónico y contraseña.</string>
+    <string name="register_body_error_same_email">Ya existe una cuenta con este correo electrónico.</string>
+
+    <string name="error_bad_username">Introduce un nombre de usuario válido.</string>
+    <string name="error_bad_email">Introduce una dirección de correo electrónico válida.</string>
+    <string name="error_bad_password">La contraseña debe tener como mínimo 8 caracteres, incluyendo al menos una mayúscula y una minúscula, un número y un carácter especial.</string>
+    <string name="error_no_connection">No hay conexión a internet. Por favor, verifica tu conexión e inténtalo de nuevo.</string>
+    <string name="confirm_password_error">Las contraseñas no coinciden.</string>
+
+    <string name="components_order">Orden de los componentes</string>
+    <string name="add_component">Añadir un nuevo componente</string>
+    <string name="reorder_component">Reordenar componente</string>
+    <string name="delete_component">Borrar componente</string>
+    <string name="move_up_component">Mover componente arriba</string>
+    <string name="move_down_component">Mover componente abajo</string>
+    <string name="no_rename">No se puede renombrar</string>
+
+    <string name="graphic_of">Gráfico de %1$s</string>
+    <string name="error_graphic">No hay suficientes datos para hacer esta gráfica.</string>
+
+    <string name="account">Cuenta</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="logout_alert_message">Para volver a tu diario deberás volver a iniciar sesión.</string>
+    <string name="are_you_sure">¿Estás seguro?</string>
+
+    <string name="notifications">Notificaciones</string>
+    <string name="receive_notifications">Recibir notificaciones</string>
+    <string name="notifications_not_available">No se pueden recibir notificaciones en este dispositivo, puedes recibirlas en nuestra app para teléfonos inteligentes.</string>
+    <string name="select_hour_of_notification">Hora de la notificación</string>
+    <string name="notification_title">Hora de hacer el diario</string>
+    <string name="notification_body">¡Es hora de hacer tu diario!</string>
+    <string name="notification_alert_title">Activa las notificaciones para DiarioCMP</string>
+    <string name="notification_alert_body">Permite que DiarioCMP te envíe notificaciones cuando sea la hora de escribir tu diario.</string>
+    <string name="notification_alert_button">Ir a Ajustes</string>
+
+    <string name="end_day_hour">Hora fin del día</string>
+    <string name="end_day_hour_quick">La hora a la que ayer pasa a ser hoy 😉.</string>
+    <string name="end_day_hour_body">La hora en la que la página "Hoy" pasará a mañana, por defecto se hace a las 00:00 h.</string>
+    <string name="force_sync">Forzar sincronización</string>
+    <string name="force_sync_quick">Si te faltan entradas de otros dispositivos pulsa este botón.</string>
+    <string name="force_sync_body">¿Estás seguro de que deseas forzar la sincronización de los datos entre este dispositivo y el servidor?</string>
+    <string name="sync_in_progress">Sincronización en progreso</string>
+    <string name="sync_error">Error de sincronización</string>
+    <string name="sync_body_error_generic">Ocurrió un problema durante la sincronización. Por favor, revisa los datos guardados e inténtalo nuevamente. Si el problema persiste, contacta al soporte técnico. Error completo:\n%1$s</string>
+
+
+    <string name="start_diary_select_components">¡Empieza tu diario añadiendo algunos componentes!</string>
+    <string name="curved_arrow">Flecha curvada</string>
+    <string name="times_up_alert_title">Se acabó el tiempo</string>
+    <string name="times_up_alert_body">Ya ha pasado la hora de acabar el diario, pero si no has acabado te podemos dar cinco minutitos más.\nTambién puedes cambiar cuando se pasa a mañana en ajustes.</string>
+    <string name="five_more_minutes">¡Cinco minutos más!</string>
+
+    <string name="tutorial_today_order_title">Tutorial de reordenación de componentes</string>
+    <string name="tutorial_today_order_body">En esta pantalla puedes organizar los componentes que formarán tu diario.\n\nArrastra y suelta los componentes para reordenarlos. También puedes agregar nuevos con el %1$s o eliminar los existentes; la decisión es tuya.\n\nHemos añadido un par de componentes para que veas cómo funciona.\n\n¡Disfruta de tu diario y que crezcas mucho! ❤️</string>
+    <string name="tutorial_today_order_body_addon_screen_not_large">botón de añadir ubicado arriba a la derecha con un '+'</string>
+    <string name="tutorial_today_order_body_addon_screen_large">el panel de la derecha</string>
+
+    <string name="short_component_title">Componente corto</string>
+    <string name="long_component_title">Componente largo</string>
+    <string name="yes_no_component_title">Componente de sí o no</string>
+    <string name="five_option_component_title">Componente de 5 opciones</string>
+    <string name="short_component_text_example">Ejemplo de componente corto</string>
+    <string name="long_component_text_example">Ejemplo de componente largo.\nEste componente puede ocupar más de una línea.</string>
+
+    <string name="change_title_component">¡Cambia mi título!</string>
+    <string name="delete_component_body">Estás a punto de borrar el componente de forma permanente.\nEsta acción no se puede deshacer.</string>
+
+    <string name="title_example_component_title">Título</string>
+    <string name="title_example_component_body">¡Ejemplo de título para hoy!</string>
+    <string name="summary_example_component_title">Resumen</string>
+    <string name="summary_example_component_body">Ejemplo de resumen del día.\nHoy ha sido un día interesante porque...</string>
+    <string name="happiness">Felicidad</string>
+
+    <string name="error_save_generic_title">Error al guardar</string>
+    <string name="error_save_generic_body">Hubo un error al guardar los datos. Por favor, intenta de nuevo más tarde.</string>
+    <string name="error_loading_generic_title">Error al cargar</string>
+    <string name="error_loading_generic_body">Hubo un error al cargar los datos. Por favor, intenta de nuevo más tarde.</string>
+
+    <string name="select_date_calendar">Selecciona una entrada en el calendario 😉.</string>
+    <string name="select_date_list">Selecciona una entrada de la lista 😉.</string>
+    <string name="no_entry_for_date">No hay entrada para la fecha seleccionada... 🤔</string>
+    <string name="no_entry_for_year_month">No hay entradas para el mes seleccionado... 🤔</string>
+
+    <string name="starting_hour_number">Hora de inicio: %1$d h</string>
+    <string name="ending_hour_number">Hora de finalización: %1$d h</string>
+
+    <string name="length_of">Longitud de %1$s</string>
+    <string name="number_percent">%1$s %</string>
+    <string name="tooltip_long_text_of_length">Número de palabras en el campo %1$s de la entrada de hoy comparado con los últimos 7 días.</string>
+
+    <string name="yesterday">Ayer</string>
+    <string name="true_">Verdadero</string>
+    <string name="false_">Falso</string>
+
+    <string name="register_time">Tiempo de registro</string>
+    <string name="tooltip_register_time">Tiempo que tomaste para crear la entrada de hoy comparado con los últimos 7 días.</string>
+
+    <string name="statistics_order">Orden de las estadísticas</string>
+    <string name="archive_statistic_body">Vas a archivar esta estadística. Puedes desarchivarla cuando quieras.\n¿Estás seguro?</string>
+    <string name="cant_be_archived">Esta estadística no se puede archivar.</string>
+    <string name="archive_statistic">Archivar estadística</string>
+    <string name="unarchive_statistics">Desarchivar estadísticas</string>
+    <string name="title_not_found">Título no encontrado</string>
+    <string name="no_archived_statistics">No hay estadísticas archivadas.</string>
+
+    <string name="short_seconds">%1$d s</string>
+    <string name="short_minutes">%1$d m</string>
+    <string name="short_hours">%1$d h</string>
+
+    <string name="preview">Vista previa</string>
+
+    <!--
+    <string name=""></string>
+      -->
+
+    <plurals name="number_words">
+        <item quantity="one">1 palabra</item>
+        <item quantity="other">%1$d palabras</item>
+    </plurals>
+    <!--    <plurals name="seconds">-->
+    <!--        <item quantity="one">1 segundo</item>-->
+    <!--        <item quantity="other">%1$d segundos</item>-->
+    <!--    </plurals>-->
+    <!--    <plurals name="minutes">-->
+    <!--        <item quantity="one">1 minuto</item>-->
+    <!--        <item quantity="other">%1$d minutos</item>-->
+    <!--    </plurals>-->
+    <!--    <plurals name="hours">-->
+    <!--        <item quantity="one">1 hora</item>-->
+    <!--        <item quantity="other">%1$d horas</item>-->
+    <!--    </plurals>-->
+
+
+    <!--        <plurals name="">-->
+    <!--            <item quantity=""></item>-->
+    <!--            <item quantity=""></item>-->
+    <!--        </plurals>-->
+</resources>

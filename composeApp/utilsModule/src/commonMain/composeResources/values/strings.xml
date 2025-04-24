@@ -1,0 +1,171 @@
+<resources>
+    <string name="diary_cmp">DiaryCMP</string>
+    <string name="diary">Diary</string>
+
+    <string name="today">Today</string>
+    <string name="calendar">Calendar</string>
+    <string name="statistics">Statistics</string>
+    <string name="settings">Settings</string>
+
+    <string name="okey">Okay</string>
+    <string name="accept">Accept</string>
+    <string name="next">Next</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="return_">Return</string>
+    <string name="cancel">Cancel</string>
+    <string name="loading">Loading...</string>
+    <string name="skip">Skip</string>
+
+    <string name="login">Log In</string>
+    <string name="register">Sign Up</string>
+    <string name="change_password">Change Password</string>
+
+    <string name="register_password_alert_title">Don't forget your password!</string>
+    <string name="register_password_alert_body">Your password is the key to your diary, without it you won't be able to access your data, and the technical support won't be able to recover your account because your data is encrypted 😱.\n\nWe recommend using a password manager like Bitwarden or LastPass.</string>
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="error_old_password">The old password is incorrect</string>
+    <string name="password_changed_title">Password Changed</string>
+    <string name="password_changed_body">The password was successfully changed, please log in again with the new password.</string>
+    <string name="generic_error_change_password">The password could not be changed, see the full error below:\n%1$s</string>
+
+    <string name="register_new_account">Create a New Account</string>
+    <string name="log_in_to_existing_account">Log in to an Existing Account</string>
+
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_description">Record your daily life with personalized components! And check out your daily life statistics!</string>
+    <string name="app_strengths_secure">Robust security with advanced information protection.</string>
+    <string name="app_strengths_multiplatform">Seamless compatibility across multiple platforms and devices.</string>
+    <string name="app_strengths_autosave">Auto-save ensures constant data preservation.</string>
+    <string name="write_name">Enter your username to get started!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="change_name">Change Name</string>
+    <string name="verify_your_email">Verify Your Email</string>
+    <string name="verify_your_email_body">We’ve sent a verification email to your address. Please verify your account to continue.</string>
+    <string name="resend_verification_email">Resend Verification Email</string>
+
+    <string name="register_title_error">Registration Error</string>
+    <string name="login_title_error">Login Error</string>
+
+    <string name="register_body_error_generic">There was an issue during registration. Please check your entered details and try again. If the issue persists, contact support. Full error:\n%1$s</string>
+    <string name="register_body_invalid_login_credentials">No account found with that email and password.</string>
+    <string name="register_body_error_same_email">An account with this email already exists.</string>
+
+    <string name="error_bad_username">Please enter a valid username.</string>
+    <string name="error_bad_email">Please enter a valid email address.</string>
+    <string name="error_bad_password">The password must be at least 8 characters long, including at least one uppercase and lowercase letter, a number, and a special character.</string>
+    <string name="error_no_connection">No internet connection. Please check your connection and try again.</string>
+    <string name="confirm_password_error">Passwords do not match.</string>
+
+    <string name="components_order">Component Order</string>
+    <string name="add_component">Add a New Component</string>
+    <string name="reorder_component">Reorder Component</string>
+    <string name="delete_component">Delete Component</string>
+    <string name="move_up_component">Move Component Up</string>
+    <string name="move_down_component">Move Component Down</string>
+    <string name="no_rename">Cannot be renamed</string>
+
+    <string name="graphic_of">Graph of %1$s</string>
+    <string name="error_graphic">Not enough data to generate this graph.</string>
+
+    <string name="account">Account</string>
+    <string name="logout">Log Out</string>
+    <string name="logout_alert_message">You will need to log in again to return to your diary.</string>
+    <string name="are_you_sure">Are you sure?</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="receive_notifications">Receive Notifications</string>
+    <string name="notifications_not_available">Notifications cannot be received on this device, but you can receive them on our smartphone app.</string>
+    <string name="select_hour_of_notification">Notification Time</string>
+    <string name="notification_title">Time for Your Diary</string>
+    <string name="notification_body">It's time to write in your diary!</string>
+    <string name="notification_alert_title">Activate the notifications for DiaryCMP</string>
+    <string name="notification_alert_body">Allow DiaryCMP to send you notifications when it's time to write in your diary.</string>
+    <string name="notification_alert_button">Go to Settings</string>
+
+    <string name="end_day_hour">End of Day Hour</string>
+    <string name="end_day_hour_quick">The time when yesterday becomes today 😉.</string>
+    <string name="end_day_hour_body">The time when the "Today" page will switch to tomorrow. By default, it is set at 00:00 h.</string>
+    <string name="force_sync">Force Sync</string>
+    <string name="force_sync_quick">If you are missing entries from other devices, press this button.</string>
+    <string name="force_sync_body">Are you sure you want to force sync data between this device and the server?</string>
+    <string name="sync_in_progress">Sync in Progress</string>
+    <string name="sync_error">Sync Error</string>
+    <string name="sync_body_error_generic">There was an issue during synchronization. Please check your saved data and try again. If the issue persists, contact support. Full error:\n%1$s</string>
+
+    <string name="start_diary_select_components">Start your diary by adding some components!</string>
+    <string name="curved_arrow">Curved Arrow</string>
+    <string name="times_up_alert_title">Time's Up</string>
+    <string name="times_up_alert_body">It's past the time to finish your diary, but if you need more time, we'll give you five extra minutes. You can also change when the day switches in the settings.</string>
+    <string name="five_more_minutes">Five More Minutes!</string>
+
+    <string name="tutorial_today_order_title">Component Reorder Tutorial</string>
+    <string name="tutorial_today_order_body">In this screen, you can organize the components that will form your diary.\n\nDrag and drop components to reorder them. You can also add new ones with the %1$s or delete existing ones; it's up to you.\n\nWe’ve added a couple of components to show you how it works.\n\nEnjoy your diary and grow a lot! ❤️</string>
+    <string name="tutorial_today_order_body_addon_screen_not_large">add button located at the top right with a '+'</string>
+    <string name="tutorial_today_order_body_addon_screen_large">the panel on the right</string>
+
+    <string name="short_component_title">Short Component</string>
+    <string name="long_component_title">Long Component</string>
+    <string name="yes_no_component_title">Yes/No Component</string>
+    <string name="five_option_component_title">5-Option Component</string>
+    <string name="short_component_text_example">Short Component Example</string>
+    <string name="long_component_text_example">Long Component Example.\nThis component may span more than one line.</string>
+
+    <string name="change_title_component">Change My Title!</string>
+    <string name="delete_component_body">You are about to permanently delete the component.\nThis action cannot be undone.</string>
+
+    <string name="title_example_component_title">Title</string>
+    <string name="title_example_component_body">Example title for today!</string>
+    <string name="summary_example_component_title">Summary</string>
+    <string name="summary_example_component_body">Example day summary.\nToday was an interesting day because...</string>
+    <string name="happiness">Happiness</string>
+
+    <string name="error_save_generic_title">Save Error</string>
+    <string name="error_save_generic_body">There was an error saving the data. Please try again later.</string>
+    <string name="error_loading_generic_title">Load Error</string>
+    <string name="error_loading_generic_body">There was an error loading the data. Please try again later.</string>
+
+    <string name="select_date_calendar">Select an entry on the calendar 😉.</string>
+    <string name="select_date_list">Select an entry from the list 😉.</string>
+    <string name="no_entry_for_date">No entry for the selected date... 🤔</string>
+    <string name="no_entry_for_year_month">No entries for the selected month... 🤔</string>
+
+    <string name="starting_hour_number">Start time: %1$d h</string>
+    <string name="ending_hour_number">End time: %1$d h</string>
+
+    <string name="length_of">Length of %1$s</string>
+    <string name="number_percent">%1$s %</string>
+    <string name="tooltip_long_text_of_length">Number of words in the %1$s field of today's entry compared to the last 7 days.</string>
+
+    <string name="yesterday">Yesterday</string>
+    <string name="true_">True</string>
+    <string name="false_">False</string>
+
+    <string name="register_time">Register time</string>
+    <string name="tooltip_register_time">Time you took to create today's entry compared to the last 7 days.</string>
+
+    <string name="statistics_order">Statistics order</string>
+    <string name="archive_statistic_body">You are going to archive this statistic. You can unarchive it whenever you want.\nAre you sure?</string>
+    <string name="cant_be_archived">This statistic cannot be archived.</string>
+    <string name="archive_statistic">Archive statistic</string>
+    <string name="unarchive_statistics">Unarchive statistics</string>
+    <string name="title_not_found">Title not found</string>
+    <string name="no_archived_statistics">No archived statistics.</string>
+
+    <string name="short_seconds">%1$d s</string>
+    <string name="short_minutes">%1$d m</string>
+    <string name="short_hours">%1$d h</string>
+
+    <string name="preview">Preview</string>
+
+    <plurals name="number_words">
+        <item quantity="one">1 word</item>
+        <item quantity="other">%1$d words</item>
+    </plurals>
+</resources>

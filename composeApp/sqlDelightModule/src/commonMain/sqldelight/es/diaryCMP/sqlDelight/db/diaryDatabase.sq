@@ -1,0 +1,141 @@
+import es.diaryCMP.modelsModule.models.DiaryEntryComponent;
+import kotlin.Boolean;
+import kotlin.ByteArray;
+import kotlin.String;
+import kotlin.collections.List;
+import kotlinx.datetime.LocalDate;
+import kotlinx.datetime.LocalDateTime;
+import kotlinx.datetime.LocalTime;
+
+-- DROP TABLE User;
+-- DROP TABLE UserSettings;
+-- DROP TABLE DiaryEntry;
+-- DROP TABLE DiaryEntryOrder;
+-- DROP TABLE StatisticsOrder;
+
+-- User
+CREATE TABLE IF NOT EXISTS User(
+    idToken             TEXT    NOT NULL,
+    email               TEXT    NOT NULL,
+    refreshToken        TEXT,
+    name                TEXT,
+    localId             TEXT    PRIMARY KEY,
+    encryptionKey       TEXT    AS ByteArray
+);
+
+insertUser:
+INSERT INTO User(idToken, email, refreshToken, name, localId, encryptionKey)
+VALUES(?, ?, ?, ?,?, ?);
+
+selectAllUsers:
+SELECT User.*
+FROM User;
+
+updateUserName:
+UPDATE User
+SET name = ?
+WHERE idToken = ?;
+
+updateEncryptionKey:
+UPDATE User
+SET encryptionKey = ?
+WHERE idToken = ?;
+
+removeAllUsers:
+DELETE FROM User;
+
+
+-- UserSettings
+CREATE TABLE IF NOT EXISTS UserSettings(
+    localId                 TEXT        NOT NULL,
+    doSendNotifications     INTEGER     AS Boolean,
+    notificationTime        TEXT        AS LocalTime,
+    endDayHour              TEXT        AS LocalTime,
+    FOREIGN KEY (localId) REFERENCES User(localId)
+);
+
+insertUserSettings:
+INSERT OR REPLACE INTO UserSettings(localId, doSendNotifications, notificationTime, endDayHour)
+VALUES(?, ?, ?,?);
+
+getAllUserSettings:
+SELECT UserSettings.*
+FROM UserSettings;
+
+updateDoSentNotifications:
+UPDATE UserSettings
+SET doSendNotifications = ?;
+
+updateNotificationTime:
+UPDATE UserSettings
+SET notificationTime = ?;
+
+updateEndDayHour:
+UPDATE UserSettings
+SET endDayHour = ?;
+
+removeAllUserSettings:
+DELETE FROM UserSettings;
+
+
+-- DiaryEntry
+CREATE TABLE IF NOT EXISTS DiaryEntry(
+    id              TEXT    PRIMARY KEY,
+    localId         TEXT    NOT NULL,
+    date            TEXT    AS LocalDate                    NOT NULL,
+    components      TEXT    AS List<DiaryEntryComponent>    NOT NULL,
+    createdDateTime     TEXT    AS LocalDateTime            NOT NULL,
+    updatedDateTime     TEXT    AS LocalDateTime            NOT NULL,
+    FOREIGN KEY (localId) REFERENCES User(localId)
+);
+
+insertDiaryEntry:
+INSERT OR REPLACE INTO DiaryEntry(id, localId, date, components, createdDateTime, updatedDateTime)
+VALUES (?,?,?,?,?,?);
+
+getAllDiaryEntries:
+SELECT DiaryEntry.* FROM DiaryEntry;
+
+getDiaryEntryByDate:
+SELECT DiaryEntry.*
+FROM DiaryEntry
+WHERE date = ?;
+
+removeAllDiaryEntries:
+DELETE FROM DiaryEntry;
+
+-- DiaryEntryOrder:
+CREATE TABLE IF NOT EXISTS DiaryEntryOrder(
+    localId         TEXT                                NOT NULL,
+    diaryEntryOrder TEXT AS List<DiaryEntryComponent>   NOT NULL,
+    updatedDateTime TEXT AS LocalDateTime               NOT NULL,
+    FOREIGN KEY (localId) REFERENCES User(localId)
+);
+
+insertDiaryEntryOrder:
+INSERT OR REPLACE INTO DiaryEntryOrder(localId, diaryEntryOrder, updatedDateTime)
+VALUES (?, ?, ?);
+
+getDiaryEntryOrder:
+SELECT DiaryEntryOrder.* FROM DiaryEntryOrder;
+
+removeAllDiaryEntryOrders:
+DELETE FROM DiaryEntryOrder;
+
+-- StatisticsOrder
+CREATE TABLE IF NOT EXISTS StatisticsOrder (
+    localId         TEXT                    NOT NULL,
+    statisticsOrder TEXT AS List<String>    NOT NULL,
+    updatedDateTime TEXT AS LocalDateTime   NOT NULL,
+    FOREIGN KEY (localId) REFERENCES User(localId)
+);
+
+insertStatisticsOrder:
+INSERT OR REPLACE INTO StatisticsOrder(localId, statisticsOrder, updatedDateTime)
+VALUES (?, ?,?);
+
+getStatisticsOrder:
+SELECT StatisticsOrder.* FROM StatisticsOrder;
+
+removeAllStatisticsOrders:
+DELETE FROM StatisticsOrder;
